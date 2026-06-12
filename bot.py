@@ -4,8 +4,8 @@ import anthropic
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-GROUP_ID = -100XXXXXXXXXX    # ← вставьте ваш GROUP_ID (Шаг 6 инструкции)
-TOPIC_ID = XXX               # ← вставьте ваш TOPIC_ID (Шаг 6 инструкции)
+GROUP_ID = -1001412965575    # ← вставьте ваш GROUP_ID (Шаг 6 инструкции)
+TOPIC_ID = 205               # ← вставьте ваш TOPIC_ID (Шаг 6 инструкции)
 ALLOWED_USER_ID = 408217238  # ← вставьте ваш Telegram ID (Шаг 2 инструкции)
 
 async def handle_message(update, context):
