@@ -9,6 +9,8 @@ TOPIC_ID = 205               # ← вставьте ваш TOPIC_ID (Шаг 6 и
 ALLOWED_USER_ID = 408217238  # ← вставьте ваш Telegram ID (Шаг 2 инструкции)
 
 async def handle_message(update, context):
+    if update.message:
+        print(f"chat_id: {update.message.chat.id}, thread_id: {update.message.message_thread_id}")
     if not update.message:
         return
     if update.message.chat.type != "private":
